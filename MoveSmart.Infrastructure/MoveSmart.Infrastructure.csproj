@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MoveSmart.Domain\MoveSmart.Domain.csproj" />
+    <ProjectReference Include="..\MoveSmart.Application\MoveSmart.Application.csproj" />
+  </ItemGroup>
+</Project>
