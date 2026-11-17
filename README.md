@@ -56,16 +56,6 @@ dotnet run --project MoveSmart.Api
 
 O banco **SQLite** (`movesmart.db`) é criado automaticamente na primeira execução, com algumas linhas de exemplo. Nenhuma instalação de banco é necessária.
 
-```bash
-dotnet tool install --global dotnet-ef --version 8.*
-dotnet ef migrations add Inicial --project MoveSmart.Infrastructure --startup-project MoveSmart.Api --output-dir Persistence/Migrations
-```
-No Visual Studio (Package Manager Console):
-```
-Add-Migration Inicial -Project MoveSmart.Infrastructure -StartupProject MoveSmart.Api -OutputDir Persistence/Migrations
-```
-Ao iniciar, a aplicação aplica as migrations existentes automaticamente.
-
 ### Testes
 ```bash
 dotnet test
